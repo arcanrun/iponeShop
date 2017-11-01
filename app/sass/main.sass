@@ -69,6 +69,7 @@ header
 	color: #fff
 	background-color: #000
 	background: url(../img/bg-header.jpg) no-repeat center
+	+bg-size-cover
 	.tel-blc
 		text-align: right
 		padding-right: 130px
@@ -179,6 +180,15 @@ header
 		font-weight: 300
 	.btn
 		margin-top: 60px
+		margin-bottom: 70px
+	#myCarousel
+		height: 620px
+		.carousel-indicators
+			li.active
+					background-color: $accent-orange
+					border: none
+			li
+				opacity: .5
 // end header-section
 // end header
 
