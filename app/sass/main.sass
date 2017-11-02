@@ -63,6 +63,11 @@ body
 	line-height: 2.4em
 	color: #fff
 	box-shadow: 0px 13px 100px 0px $accent-orange
+.pos-abs-to-bottom
+	position: absolute
+	bottom: 0
+.pos-rel
+	position: relative
 // end duty classes
 // header
 header
@@ -372,4 +377,55 @@ header
 			padding-bottom: 200px
 // end section-3
 
+// section-4
+.section-4
+	background-color: #777777
+	background: url(../img/bgsec4.jpg) no-repeat center
+	+bg-size-cover
+	.contacts-blc
+		padding-left: 65px
+		padding-top: 70px
+		padding-bottom: 70px
+		margin-top: 136px
+		margin-bottom: 127px
+		background: #fff
+		box-shadow: 0px 5px 10px 2px  #DCDBD3
+		border-radius: 2px
+	h3
+		color: #595c63
+		font-family: $helvBold
+		font-size: 48px
+		font-weight: 700
+		line-height: 70px
+	span
+		display: block
+		opacity: .5 
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 14px
+		font-weight: 400
+		line-height: 35px
+	p
+		max-width: 239px
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 18px
+		font-weight: 400
+		line-height: 25px
+	a[href*=tel]
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 18px
+		font-weight: 400
+		line-height: 25px
+	a[href*=mailto]
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 16px
+		font-weight: 400
+		line-height: 25px
+		text-decoration: underline
+	.pos-rel
+		
+// end section-4
 @import "media" // Всегда в конце
