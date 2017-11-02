@@ -465,17 +465,79 @@ footer
 					opacity: 1
 					border-bottom: 1px solid dashed
 	.second-row
-		p
-			padding-top: 45px
+		.first-p
+			padding-top: 60px
 			opacity: 0.5
 			color: #595c63
 			font-family: $helvRoman
 			font-size: 14px
 			font-weight: 400
 			line-height: 20px
+
+		.second-p
+			color: #595c63
+			font-family: $helvRoman
+			font-size: 14px
+			font-weight: 400
+			line-height: 20px
+			position: relative
+			top: 30px
+			height: 14px
+		.col-lg-7
+			p
+				width: 81px
+				height: 14px
+				color: #595c63
+				font-family: $helvRoman
+				font-size: 14px
+				font-weight: 400
+				line-height: 20px
+				display: inline-block
+				
 		ul
+			margin-top: -20px
 			li
+				padding-right: 10px
 				list-style: none
 				display: inline
+				img
+					opacity: .5
+					&:hover
+						opacity: 1
+					&:first-child
+						padding-left: 70px
+
+		.fa
+			opacity: 1 
+			font-size: 18px
+			position: absolute
+			left: 31%
+			top: 30%
+		.col-lg-4
+			.input-group
+				margin-top: 20px
+				width: 100%
+			.search-btn
+				opacity: 1 
+				position: relative
+				width: 45px
+				height: 45px
+				background-color: #F42953
+				border-radius: 23px
+				box-shadow: 0px 0px 0px 0px
+				color: #fff
+				z-index: 2
+				margin-left: -48px
+			input[type*=text]
+				border-radius: 45px
+				border: 1px solid #DBDCDA
+				padding: 25px
+				color: #595c63
+				font-family: $helvRoman
+				font-size: 14px
+				font-weight: 400
+				line-height: 35px
+				z-index: 1
+
 					// end footer
 @import "media" // Всегда в конце
