@@ -5,8 +5,27 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
-
+	.navbar-nav
+		width: 100%
+		li
+			&:nth-child(3n)
+				float: right
+	.navbar-right
+		text-align: center
+		li
+			
+			float: none
+			display: inline-block
+			&:nth-child(3n)
+				float: none
+			a
+				padding: 0px
+				display: inline
+		.shop-btn, .search-btn
+			display: inline-block
+			.badge
+header .navbar-right li .search-btn .fa, header .navbar-right li .shop-btn .fa
+	top: 30%				
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -15,13 +34,38 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
-
+	.navbar-nav
+		width: auto
+	header
+		.navbar-right
+			text-align: center
+			li
+				display: block
+				padding-right: 0px
+				a
+					padding: 10px
+					display: block
+			.shop-btn, .search-btn
+				display: inline-block
+				.badge
+header .navbar-right li .search-btn .fa, header .navbar-right li .shop-btn .fa
+	top: 30%			
+header .navbar-right li:nth-child(5),.navbar-right li:nth-child(3n)
+	display: inline	
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
-
+	.header-section
+		padding-top: 50px
+	.header-section h2,
+		font-size: 40px
+	.header-section h1
+		font-size: 80px
+	.header-section p
+		font-size: 20px
+	.header-section .btn
+		margin-top: 20px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
