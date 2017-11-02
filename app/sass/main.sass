@@ -431,4 +431,51 @@ header
 		height: 280px
 
 // end section-4
+
+// footer
+footer
+	.first-row
+		img[src*=logo]
+			margin-top: 35px
+		ul
+			padding-top: 50px
+			float: right
+			li
+				display: inline
+				list-style: none
+				padding-left: 40px
+				&:first-child
+					padding-left: 0px
+				a
+					color: #595c63
+					font-family: $helvRoman
+					font-size: 14px
+					font-weight: 400
+					line-height: 20px
+					opacity: .5
+					&:hover
+						opacity: 1
+						text-decoration: none
+				a[href*=tel]
+					color: #595c63
+					font-family: $helvBold
+					font-size: 14px
+					font-weight: 700
+					text-transform: uppercase
+					opacity: 1
+					border-bottom: 1px solid dashed
+	.second-row
+		p
+			padding-top: 45px
+			opacity: 0.5
+			color: #595c63
+			font-family: $helvRoman
+			font-size: 14px
+			font-weight: 400
+			line-height: 20px
+		ul
+			li
+				list-style: none
+				display: inline
+					// end footer
 @import "media" // Всегда в конце
