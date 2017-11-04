@@ -600,7 +600,7 @@ footer
 	.tel-blc a
 		border-bottom: 1px dashed #595C63
 // section-1 service
-.section-1-service
+.section-1-service, .section-1-contacts
 	background: #F1F1F5
 	h3
 		color: #595c63
@@ -733,6 +733,57 @@ footer
 				left: 0
 		// end under-section-2-4
 // end section-2-service
+
+// section-1 service
+.section-1-contacts
+	background-color: #fff
+	background: url(../img/big-logo.png) no-repeat left 40% top 20px 
+	span
+		display: block
+		opacity: .5 
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 14px
+		font-weight: 400
+		line-height: 35px
+	p
+		max-width: 239px
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 18px
+		font-weight: 400
+		line-height: 25px
+	a[href*=tel]
+
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 18px
+		font-weight: 400
+		line-height: 25px
+	a[href*=mailto]
+		color: #A6CFF1
+		font-family: $helvRoman
+		font-size: 16px
+		font-weight: 400
+		line-height: 25px
+		text-decoration: underline
+	b
+		font-weight: normal
+		color: #f33143
+		font-size: 14px
+	.wrapper-adress-blc
+		height: 200px
+		position: relative
+		float: right
+		padding-right: 60px
+	.wrapper-time-blc
+		height: 200px
+		position: relative
+		padding-left: 60px
+	.wrapper-time, .wrapper-adress
+		position: absolute
+		bottom: 0
+// end section-2 service
 // ====================== end serive page ====================
 
 @import "media" // Всегда в конце
