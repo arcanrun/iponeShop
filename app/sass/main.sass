@@ -148,6 +148,16 @@ body
 			padding-right: 10px
 		&:last-child
 			padding-right: 0px
+		.badge
+			position: absolute
+			top: 0
+			right: 0
+			background: $accent-orange
+			color: #fff
+			border-radius: 100%
+			width: 19px
+			height: 19px
+			z-index: 2 
 		a
 			padding-left: 0px
 			padding-right: 0px
@@ -169,12 +179,7 @@ body
 			font-size: 18px
 			position: absolute
 			left: 31%
-		.badge
-			position: absolute
-			top: 0
-			right: 0
-			background: $accent-orange
-			color: #fff
+		
 .navbar-default .navbar-nav>li>a
 	color: #e9e9ea
 	font-size: 13px
@@ -538,11 +543,11 @@ footer
 				box-shadow: 0px 0px 0px 0px
 				color: #fff
 				z-index: 2
-				margin-left: -48px
+				margin-left: -15px
 			input[type*=text]
 				border-radius: 45px
 				border: 1px solid #DBDCDA
-				padding: 25px
+				padding: 15px
 				color: #595c63
 				font-family: $helvRoman
 				font-size: 14px
@@ -559,9 +564,10 @@ footer
 	background-color: #fff
 	margin-bottom: -20px
 	.navbar-default
+		padding-bottom: 30px
 		background: url(../img/bg-others-nav.png) no-repeat 100px
 		+bg-size-cover
-		background-size: 495px 120px
+		background-size: 495px 150px
 		background-color: #fff
 		border-radius: 0px
 		box-shadow: 0px -5px 10px 10px #D9D8DC

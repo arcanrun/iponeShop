@@ -28,11 +28,15 @@
 		top: 30%		
 	footer .first-row ul li
 		padding-left: 15px
+	footer .second-row ul li
+		&:last-child
+			padding-right: 0px
 	// others
 	.header-others
 		.navbar-default
 			background: url(../img/bg-others-nav.png) no-repeat 0px top
-			background-size: 545px 170px
+			background-size: 545px 200px
+
 		/* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -69,9 +73,11 @@
 				a
 					padding: 10px
 					display: block
+				.badge
+					top: -35px
 			.shop-btn, .search-btn
 				display: inline-block
-				.badge
+
 	.header-main .navbar-right li .search-btn .fa, .header-main .navbar-right li .shop-btn .fa, 	.header-others .navbar-right li .search-btn .fa, .header-others .navbar-right li .shop-btn .fa
 		top: 30%			
 	.header-main .navbar-right li:nth-child(5),.navbar-right li:nth-child(3n), .header-others .navbar-right li:nth-child(5),.navbar-right li:nth-child(3n)
@@ -87,6 +93,7 @@
 	// others
 	.header-others
 		.navbar-default
+			padding-bottom: 0px
 			background: url(../img/bg-others-nav.png) no-repeat 0px top
 			background-size: 245px 52px
 /* Extra Small Devices, Phones */
