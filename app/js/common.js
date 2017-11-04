@@ -11,7 +11,8 @@ $(function() {
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    center:true,
+    nav: true,
     navText: ["<i class='fa fa-chevron-left' aria-hidden='true'></i>", "<i class='fa fa-chevron-right' aria-hidden='true'></i>"],
     responsive:{
         0:{
