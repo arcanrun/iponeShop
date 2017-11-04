@@ -70,109 +70,116 @@ body
 	position: relative
 // end duty classes
 // header
-header
+.header-main
 	color: #fff
 	background-color: #000
 	background: url(../img/bg-header.jpg) no-repeat center
 	+bg-size-cover
-	.tel-blc
-		text-align: right
-		padding-right: 130px
-		padding-top: 20px
-		a
-			color: #e9e9ea
-			font-family: $helvBold
-			font-size: 14px
-			font-weight: 700
-			text-transform: uppercase
-			border-bottom: 1px dashed #fff
-	.navbar-default
+	.navbar-default .navbar-nav>li>a
+		&:hover
+			color: #fff
+	.navbar-default .navbar-nav>li>a.shop-btn, .navbar-default .navbar-nav>li>a.search-btn
+		&:hover
+			background-color: #fff !important
+			color: $accent-orange
+	.navbar-default .navbar-nav>li.social-icons-navbar>a:hover
+			background: transparent !important
+			color: $accent-orange
+.tel-blc
+	text-align: right
+	padding-right: 130px
+	padding-top: 20px
+	a
+		color: #e9e9ea
+		font-family: $helvBold
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		border-bottom: 1px dashed #fff
+.navbar-default
+	border: none
+	background: transparent
+	.navbar-toggle
 		border: none
-		background: transparent
-		.navbar-toggle
-			border: none
-		.navbar-brand
-			img
-				width: 119px !important
-				height: 41px !important
-				margin-top: -10px !important
+	.navbar-brand
+		img
+			width: 119px !important
+			height: 41px !important
+			margin-top: -10px !important
 
-	.navbar
-		.fa
-			width: 16px
-			height: 10px
-			opacity: 0.7
-		img[src*=Menu-Icon]
-			width: 45px
-			height: 45px
-		img[src*=logo]
-			width: 139px
-			height: 51px
-			margin-top: -15px
+.navbar
+	.fa
+		width: 16px
+		height: 10px
+		opacity: 0.7
+	img[src*=Menu-Icon]
+		width: 45px
+		height: 45px
+	img[src*=logo]
+		width: 139px
+		height: 51px
+		margin-top: -15px
 
-		.nav
-			.social-icons-navbar
-				padding-top: 10px
-				a
-					display: inline
-					padding: 0px
-					padding-right: 10px
-					&:last-child
-						padding-right: 40px
-		.dropdown-toggle
-			margin-top: -13px
-			color: #e9e9ea
-			font-family: $helvMedium
-			font-size: 15px
-			font-weight: 500
-			text-transform: uppercase
-			padding-right: 75px
-			img
-				margin-right: 10px
-	.navbar-right
-		li
-			padding-right: 30px
-			&:nth-child(5)
-				padding-right: 10px
-			&:last-child
-				padding-right: 0px
+	.nav
+		.social-icons-navbar
+			padding-top: 10px
 			a
-				padding-left: 0px
-				padding-right: 0px
-				opacity: 0.5
-				color: #bcc2d0
-				&:hover
-					color: #fff !important
-					opacity: 1 !important
-			.shop-btn, .search-btn
-				opacity: 1 
-				position: relative
-				width: 45px
-				height: 45px
-				background-color: #3f4044
-				border-radius: 23px
-				&:hover
-					background-color: #e6e6e6
-					color: $accent-orange
-				.fa
-					opacity: 1 
-					font-size: 18px
-					position: absolute
-					left: 31%
-				.badge
-					position: absolute
-					top: 0
-					right: 0
-					background: $accent-orange
-					color: #fff
-	.active
-		color: #fff !important
-		opacity: 1 !important	
-
+				display: inline
+				padding: 0px
+				padding-right: 10px
+				&:last-child
+					padding-right: 40px
+	.dropdown-toggle
+		margin-top: -13px
+		color: #e9e9ea
+		font-family: $helvMedium
+		font-size: 15px
+		font-weight: 500
+		text-transform: uppercase
+		padding-right: 75px
+		img
+			margin-right: 10px
+.navbar-right
+	li
+		padding-right: 30px
+		&:nth-child(5)
+			padding-right: 10px
+		&:last-child
+			padding-right: 0px
+		a
+			padding-left: 0px
+			padding-right: 0px
+			opacity: 0.5
+			color: #bcc2d0
+			&:hover
+				
+				opacity: 1 !important
+				background: none !important
+	.shop-btn, .search-btn
+		opacity: 1 
+		position: relative
+		width: 45px
+		height: 45px
+		background-color: #3f4044
+		border-radius: 23px
+		.fa
+			opacity: 1 
+			font-size: 18px
+			position: absolute
+			left: 31%
+		.badge
+			position: absolute
+			top: 0
+			right: 0
+			background: $accent-orange
+			color: #fff
 .navbar-default .navbar-nav>li>a
 	color: #e9e9ea
 	font-size: 13px
 	font-weight: 400
+.navbar-default .navbar-nav>li>a.active
+	color: #fff
+	opacity: 1
 // header-section
 .header-section
 	padding-bottom: 65px
@@ -434,6 +441,7 @@ header
 
 // footer
 footer
+	background: #fff
 	.first-row
 		img[src*=logo]
 			margin-top: 35px
@@ -539,7 +547,53 @@ footer
 				font-weight: 400
 				line-height: 35px
 				z-index: 1
+// end footer
+						
+// ====================== end main page ===================
 
 
-					// end footer
+// ===================== service page =====================
+.header-others
+	background-color: #fff
+	.navbar-default
+		background: url(../img/bg-others-nav.png) no-repeat 100px
+		+bg-size-cover
+		background-size: 495px 120px
+		background-color: #fff
+		border-radius: 0px
+		box-shadow: 0px -5px 10px 10px #D9D8DC
+		.navbar-right
+			font-family: $helvMedium
+			.shop-btn, .search-btn
+				background-color: #BEBFC3
+				color: #fff
+				&:hover
+					color: $accent-orange
+					border: 1px solid #F0F0F1 
+					background-color: #fff
+			
+		.social-icons-navbar
+			.fa
+				&:hover
+					color: $accent-orange 
+	.navbar-default .navbar-nav>li>a
+		color: #ACADB1
+		&:hover
+			color: #595C63
+			font-weight: 400
+	.navbar-default .navbar-nav>li>a.active, .tel-blc a
+		color: #595C63
+	.navbar-default .navbar-nav>li>a.dropdown-toggle
+		color: #595C63 
+		font-family: $helvBold
+	.navbar-default .navbar-nav>li>a.active
+		font-weight: 400
+	.tel-blc a
+		border-bottom: 1px dashed #595C63
+	// .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+	// 	color: $accent-orange
+	// 	border: 1px solid #F0F0F1 
+	
+// ====================== end serive page ====================
+
 @import "media" // Всегда в конце
