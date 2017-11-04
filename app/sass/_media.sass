@@ -24,9 +24,11 @@
 		.shop-btn, .search-btn
 			display: inline-block
 			.badge
-header .navbar-right li .search-btn .fa, header .navbar-right li .shop-btn .fa
-	top: 30%				
-/* Medium Devices, Desktops */
+	header .navbar-right li .search-btn .fa, header .navbar-right li .shop-btn .fa
+		top: 30%		
+	footer .first-row ul li
+		padding-left: 15px
+		/* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
 	.section-3
@@ -37,7 +39,17 @@ header .navbar-right li .search-btn .fa, header .navbar-right li .shop-btn .fa
 		p
 			&:last-child
 				padding-bottom: 50px
-
+	footer .first-row ul
+		margin-left: -40px
+		padding-top: 10px
+		float: left
+	footer .first-row ul li
+		float: left
+		display: block
+		width: 100%
+		padding-left: 0px
+	footer .second-row ul
+		margin-left: -40px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
@@ -90,7 +102,7 @@ header .navbar-right li .search-btn .fa, header .navbar-right li .shop-btn .fa
 	.section-4 .pos-rel
 		+clearfix
 		height: 180px
-	
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
