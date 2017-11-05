@@ -66,6 +66,9 @@ body
 .pos-abs-to-bottom
 	position: absolute
 	bottom: 0
+.pos-abs-to-top
+	position: absolute
+	top: 0
 .pos-rel
 	position: relative
 .margin-0-auto
@@ -813,7 +816,7 @@ footer
 		bottom: 0
 	// section-2-contacts
 .section-2-contacts
-	padding-top: 0px
+	padding-top: 30px
 	img
 		width: 100% 
 	// end section-2-contacts
@@ -858,6 +861,83 @@ footer
 					
 					
 // end section-2-delivery
+
+//catalog
+	//section-1-catalog
+.section-1-catalog
+	position: relative
+	z-index: 2
+	background: url(../img/reflections.jpg) no-repeat center
+	+bg-size-cover
+	height: 530px
+	h3
+		padding-top: 150px
+		font-size: 60px
+		color: #fff
+		font-family: $helvLight
+	h2
+		font-size: 100px
+		font-family: $helvMedium
+		color: #fff
+.section-2-catalog
+	background: #F1F1F5
+
+// good item for catalog
+.item-good-catalog
+	margin-top: 20px
+	text-align: center
+	box-shadow: 0 0 1px 1px #dcdbd3
+	border-bottom: 2px solid transparent
+	&:hover
+		border-bottom: 2px solid $accent-orange
+	img
+		max-width: 110px
+	.good-img-blc-catalog
+		padding: 20px
+		position: relative
+		background: #fff
+		text-align: center
+		.pos-abs-to-top
+			padding-top: 10px
+			right: 0
+	.item-text-catalog
+		height: 100%
+		background: #F8F8F8
+	.title, .sub-title
+		color: #595c63
+		font-family: $helvLight
+		font-size: 18px
+		font-weight: 300
+		line-height: 25px
+	.title
+		padding-top: 25px
+	.sub-title
+		padding-bottom: 45px
+	.price
+		color: #595c63
+		font-family: $helvBold
+		font-size: 30px
+		font-weight: 700
+		line-height: 20px
+		padding-bottom: 63px
+.new-label, .hit-label
+	display: block
+	margin-top: 5px
+	margin-right: 15px
+	width: 60px
+	height: 20px
+	background-color: $accent-orange
+	border-radius: 10px
+	color: white
+	font-family: $RalewayBold
+	padding-top: 3px
+	font-size: 11px
+	font-weight: 700
+
+	
+// end good item for catalog
+	// end section-1-catalog
+// end catalog
 // ====================== end serive page ====================
 
 @import "media" // Всегда в конце
