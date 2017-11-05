@@ -27,4 +27,14 @@ $('.owl-carousel').owlCarousel({
     }
 })
 // end owl
+
+// tabs
+$(".tabs-content .item-delivery").not(":first").hide();
+$(".tabs-control a").on("click", function(e){
+   e.preventDefault();
+   $(".tabs-control a").removeClass("active").eq($(this).index()).addClass("active");
+   $(".tabs-content .item-delivery").hide().eq($(this).index()).fadeIn();
+   console.log($(this).index());
+   console.log($(this).eq());
+});
 });

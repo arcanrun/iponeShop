@@ -600,7 +600,7 @@ footer
 	.tel-blc a
 		border-bottom: 1px dashed #595C63
 // section-1 service
-.section-1-service, .section-1-contacts
+.section-1-service, .section-1-contacts, .section-1-delivery
 	background: #F1F1F5
 	h3
 		color: #595c63
@@ -783,7 +783,47 @@ footer
 	.wrapper-time, .wrapper-adress
 		position: absolute
 		bottom: 0
+	// section-2-contacts
+.section-2-contacts
+	padding-top: 60px
+	img
+		width: 100% 
+	// end section-2-contacts
 // end section-2 service
+
+// section-2-delivery
+.section-2-delivery
+	background: #F1F1F5
+	.wrapper-section-2-delivery-text
+		padding-top: 50px
+	.wrapper-section-2-delivery
+		
+		background: #fff
+		margin-bottom: 88px
+
+		.wrapper-tab
+			background: #FEFEFE
+			border-bottom: 1px solid #F2F2F3
+
+			.tabs-control
+				text-align: center
+				a
+					padding-top: 34px
+					padding-bottom: 22px
+					margin-right: 50px
+					display: inline-block
+					color: #B7B8BA
+					font-family: $helvMedium
+					font-size: 16px
+					font-weight: 500
+					&:last-child
+						margin-right: 0px
+				.active
+					color: #595c63
+					border-bottom: 1px solid $accent-orange
+					
+					
+// end section-2-delivery
 // ====================== end serive page ====================
 
 @import "media" // Всегда в конце
