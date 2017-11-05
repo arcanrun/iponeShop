@@ -881,7 +881,8 @@ footer
 		color: #fff
 .section-2-catalog
 	background: #F1F1F5
-
+	.section-2
+		padding-top: 0px
 // good item for catalog
 .item-good-catalog
 	margin-bottom: 10px
@@ -978,6 +979,37 @@ footer
 // end good item for catalog
 	// end section-1-catalog
 // end catalog
+
+// aside-mnu
+.aside-mnu
+	margin-top: 50px
+	ul
+		background: #fff
+		li
+			padding: 30px
+			list-style: none
+			border-bottom: 1px solid #DEDEE0
+			margin-left: -40px
+			a
+				opacity: 0.5
+				color: #595c63
+				font-family: $helvMedium
+				font-size: 15px
+				&:hover
+					opacity: 1
+					font-family: $helvMedium
+	.active
+		color: $accent-orange
+		opacity: 1
+	.sub-mnu
+		li
+			border-bottom: none
+			padding-bottom: 0px
+			padding-top: 10px
+			&:hover
+				color: $accent-orange
+
+// end aside-mnu
 // ====================== end serive page ====================
 
 @import "media" // Всегда в конце

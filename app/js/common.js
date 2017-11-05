@@ -44,4 +44,24 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 // end tooltip
+
+// asdide mnu
+$(".aside-mnu li").on("click", function(e){
+  $(".aside-mnu li a").removeClass("active");
+  $(this).children("a").addClass("active");
+  $(this).children("a").children("i").toggleClass(function(){
+    if($(this).hasClass("fa-chevron-down"))
+    {
+      $(this).removeClass("fa-chevron-down");
+      return "fa-chevron-up"
+    }
+    else
+    {
+       $(this).removeClass("fa-chevron-up");
+      return "fa-chevron-down"
+    }
+  });
+});
+
+// end aside mnu
 });
