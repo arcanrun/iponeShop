@@ -37,4 +37,11 @@ $(".tabs-control a").on("click", function(e){
    console.log($(this).index());
    console.log($(this).eq());
 });
+// end tabs
+
+// tooltip
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+// end tooltip
 });
