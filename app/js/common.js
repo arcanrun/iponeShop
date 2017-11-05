@@ -46,21 +46,10 @@ $(document).ready(function(){
 // end tooltip
 
 // asdide mnu
-$(".aside-mnu li").on("click", function(e){
+$(".aside-mnu li>a").on("click", function(e){
   $(".aside-mnu li a").removeClass("active");
-  $(this).children("a").addClass("active");
-  $(this).children("a").children("i").toggleClass(function(){
-    if($(this).hasClass("fa-chevron-down"))
-    {
-      $(this).removeClass("fa-chevron-down");
-      return "fa-chevron-up"
-    }
-    else
-    {
-       $(this).removeClass("fa-chevron-up");
-      return "fa-chevron-down"
-    }
-  });
+  $(this).addClass("active");
+  $(this).children("i").toggleClass("rotated unrotated").ccs("top", "2px");
 });
 
 // end aside mnu

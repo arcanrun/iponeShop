@@ -1008,6 +1008,30 @@ footer
 			padding-top: 10px
 			&:hover
 				color: $accent-orange
+.rotated
+	position: relative
+	top: 2px
+	-moz-transform: rotate(-180deg) /* Для Firefox */
+	-ms-transform: rotate(-180deg) /* Для IE */
+	-webkit-transform: rotate(-180deg) /* Для Safari, Chrome, iOS */
+	-o-transform: rotate(-180deg) /* Для Opera */
+	transform: rotate(-180deg)
+	-webkit-transition: all 0.5s ease
+	-moz-transition: all 0.5s ease
+	-o-transition: all 0.5s ease
+	transition: all 0.5s ease
+.unrotated
+	position: relative
+	top: 0px
+	-moz-transform: rotate(0deg) /* Для Firefox */
+	-ms-transform: rotate(0deg) /* Для IE */
+	-webkit-transform: rotate(0deg) /* Для Safari, Chrome, iOS */
+	-o-transform: rotate(0deg) /* Для Opera */
+	transform: rotate(0deg)
+	-webkit-transition: all 0.5s ease
+	-moz-transition: all 0.5s ease
+	-o-transition: all 0.5s ease
+	transition: all 0.5s ease
 
 // end aside-mnu
 // ====================== end serive page ====================
