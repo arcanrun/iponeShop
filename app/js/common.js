@@ -53,4 +53,18 @@ $(".aside-mnu li>a").on("click", function(e){
 });
 
 // end aside mnu
+
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount_1" ).val(  ui.values[ 0 ] );
+        $( "#amount_2" ).val(  ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
 });
