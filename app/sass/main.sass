@@ -1082,27 +1082,50 @@ footer
 			margin-left: -22.5px
 			bottom: 20px
 	.more-filter-1
+		padding-left: 20px
+		padding-top: 20px
 		background: #fff
-$multiRangeHeight: 2em
-input[type="range"][multiple] 
-	display: block
-	height: $multiRangeHeight
-	margin: 0
-	pointer-events: none
-	& + input[type="range"][multiple] 
-	  margin-top: $multiRangeHeight * -1
-	
-
-
-@mixin multirange-thumb 
-	pointer-events: all
-input[type="range"]::-webkit-slider-thumb 
-	@include multirange-thumb
-input[type="range"]::-moz-range-thumb 
-	@include multirange-thumb
-input[type="range"]::-ms-thumb 
-	@include multirange-thumb
-
+		.input-group
+			input
+				width: 43%
+				font-family: $helvRoman
+				font-size: 14px
+				padding: 10px
+				border: 2px solid #f2f2f3
+				&::-webkit-input-placeholder 
+					color: #B6B7BA
+				&::-moz-placeholder          
+					color: #B6B7BA
+				&:-moz-placeholder          
+					color: #B6B7BA
+				&:-ms-input-placeholde
+					color: #B6B7BA
+			input[name*=amount_1]
+				border-radius: 5px 0px 0px 5px
+			input[name*=amount_2]
+				margin-left: -2px
+				border-radius: 0px 5px 5px 0px
+				margin-bottom: 20px
+	.ui-widget.ui-widget-content
+		background: #595C63
+		border: none
+		margin-bottom: 20px
+		height: 5px
+		
+		width: 100%
+	.ui-slider .ui-slider-range
+		background: #F2F2F3
+		border: 1px solid #F2F2F3
+		border-radius: 0px 0px 0px 0px
+	.ui-slider .ui-slider-handle
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 5px 10px 5px
+		border-color: transparent transparent #595C63 transparent
+		background: transparent
+		top: 0.2em
+		margin-left: -.3em
 						
 
 			

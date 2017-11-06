@@ -57,8 +57,8 @@ $(".aside-mnu li>a").on("click", function(e){
     $( "#slider-range" ).slider({
       range: true,
       min: 0,
-      max: 500,
-      values: [ 75, 300 ],
+      max: 100000,
+      values: [ 0, 100000 ],
       slide: function( event, ui ) {
         $( "#amount_1" ).val(  ui.values[ 0 ] );
         $( "#amount_2" ).val(  ui.values[ 1 ] );
@@ -67,4 +67,20 @@ $(".aside-mnu li>a").on("click", function(e){
     $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
       " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
+    $( "#amount_1" ).on("keypress", function(){
+      if($("#amount_1").val() <= $( "#slider-range" ).slider( "values", 1 ) )
+      {
+        $( "#slider-range" ).slider( "values",0, $(this).val() );
+
+      }
+     
+    });
+    $( "#amount_2").on("keypress", function(){
+      if($("#amount_2").val() > $("#amount_1").val())
+      {
+        $( "#slider-range" ).slider( "values",1, $(this).val() );
+      }
+     
+    });
+     
 });
