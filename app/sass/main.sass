@@ -1081,11 +1081,13 @@ footer
 			left: 50%
 			margin-left: -22.5px
 			bottom: 20px
+	// more-filter-1
 	.more-filter-1
 		padding-left: 20px
 		padding-top: 20px
 		background: #fff
 		.input-group
+			width: 100%
 			input
 				width: 43%
 				font-family: $helvRoman
@@ -1126,60 +1128,60 @@ footer
 		background: transparent
 		top: 0.2em
 		margin-left: -.3em
-	
-[type="radio"]:checked,
-[type="radio"]:not(:checked) 
-	position: absolute
-	left: -9999px
-
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-
-	position: relative
-	padding-left: 28px
-	cursor: pointer
-	line-height: 20px
-	display: inline-block
-	color: #666
-
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before 
-	content: ''
-	
-	position: absolute
-	left: 0
-	top: 0
-	width: 18px
-	height: 18px
-	border: 1px solid #ddd
-	border-radius: 100%
-	background: #fff
-
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after 
-	content: ''
-	width: 12px
-	height: 12px
-	background: #F87DA9
-	position: absolute
-	top: 3px
-	left: 3px
-	border-radius: 100%
-	-webkit-transition: all 0.2s ease
-	transition: all 0.2s ease
-
-[type="radio"]:not(:checked) + label:after 
-	opacity: 0
-	-webkit-transform: scale(0)
-	transform: scale(0)
-
-[type="radio"]:checked + label:after 
-	opacity: 1
-	-webkit-transform: scale(1)
-	transform: scale(1)
-	
-
-
+	.color-blc
+		border-left: 1px solid #EEEEEF
+		border-right: 1px solid #EEEEEF
+		ul
+			margin-left: -14px
+			margin-bottom: 0px
+			li
+				list-style: none
+				display: inline
+				a
+					display: inline-block
+					width: 17px
+					height: 17px
+					background: #D9DADC content-box
+					padding: 2px
+					border-radius: 100%
+					border: 1px solid #D9DADC
+					border-spacing: 7px 11px
+					&:hover
+						border: 1px solid #000 
+				#color1, #color4
+					background: #595C63 content-box
+				#color2, #color5
+					background: #DEDEE0 content-box
+				#color3, #color6
+					background: #E1A671 content-box
+				.active-color
+					border: 1px solid #000 
+		p
+			text-align: center
+			opacity: 0.5
+			color: #595c63
+			font-family: $helvRoman
+			font-size: 12px
+			font-weight: 400
+			padding-bottom: 0px
+	.memory-blc
+		a
+			margin-bottom: 2px
+			width: 56px
+			display: inline-block
+			opacity: .5
+			color: #595c63
+			font-family: $helvRoman
+			font-size: 14px
+			font-weight: 400
+			border: 2px solid #EEEFF0
+			padding: 5px
+			border-radius: 3px
+			&:hover
+				opacity: 1
+				font-family: $helvMedium
+				border-color: #ACADB1
+	// end more-filter-1
 
 
 
