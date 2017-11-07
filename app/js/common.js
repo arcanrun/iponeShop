@@ -54,6 +54,7 @@ $(".aside-mnu li>a").on("click", function(e){
 
 // end aside mnu
 
+// range slider
     $( "#slider-range" ).slider({
       range: true,
       min: 0,
@@ -82,5 +83,13 @@ $(".aside-mnu li>a").on("click", function(e){
       }
      
     });
+// end range slider
+
+$("#showFilter1").on("click", function(e){
+  e.preventDefault();
+  $(".drop-down-filter-body").fadeToggle();
+  $(".more-filter-2").toggleClass("bg-darker");
+  
+});
      
 });
