@@ -89,7 +89,8 @@ blockquote
 	list-style: decimal
 	li
 		padding-left: 0px !important
-
+.mt-minus-20
+	margin-top: -20px
 
 // end duty classes
 // header
@@ -1258,10 +1259,60 @@ footer
 .bg-darker
 	background: #F8F8F8
 	// end more-filter-1
+.check-blc
+	padding-left: 1px
+	padding-bottom: 20px
+	input[type=checkbox]
+		display: none 
+	label:before
+		border-radius: 3px
+	input[type=checkbox]:checked + label:before 
+		content: "\2713"
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .2)
+		font-size: 15px
+		color: #f3f3f3
+		text-align: center
+		line-height: 15px
+	label
+		display: inline-block
+		cursor: pointer
+		position: relative
+		padding-left: 25px
+		margin-right: 15px
+		opacity: .5
+		color: #595c63
+		font-family: $helvRoman
+		font-size: 14px
+		line-height: 18px
+		&::before 
+			content: ""
+			display: inline-block
+			width: 16px
+			height: 16px
+			margin-right: 10px
+			position: absolute
+			left: 0
+			bottom: 1px
+			background-color: #aaa
+			box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8)
+
 
 
 
 // end filter-blc
+
+
+// card page
+.section-3-card
+	background: #F1F1F5
+.card-title
+	
+	color: #595c63
+	font-family: $helvBold
+	font-size: 30px
+	
+
+// end card page
 // ====================== end serive page ====================
 
 @import "media" // Всегда в конце
