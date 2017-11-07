@@ -1190,7 +1190,9 @@ footer
 				border-color: #ACADB1
 	.drop-down-filter
 		padding-bottom: 20px
-		.drop-down-filter-contorl
+		.drop-down-filter-contorl	
+			padding-top: 20px
+			padding-bottom: 40px
 			a
 				text-transform: uppercase
 				width: 159px
@@ -1207,10 +1209,50 @@ footer
 					opacity: 1
 					border-color: $accent-orange
 		.drop-down-filter-drop
+			margin-bottom: 20px
+			position: relative
+			border: 2px solid #E9E9EA
+			width: 100%
+			border-radius: 3px
+			overflow: hidden
+			padding-top: 20px
+			padding-bottom: 0px
+			background: #fff
+			i
+				position: absolute
+				right: 10px
+				color: #AAACAF
+				top: 40%
+				font-size: 10px
+			span
+				z-index: 0
+				font-family: $helvRoman
+				opacity: 0.5
+				color: #595c63
+				font-size: 11px
+				position: absolute
+				top: 5px
+				left: 7px
 			select
-				border: 1px solid #ACADB1
-				padding: 20px
-				border-radius: 5px
+				padding: 5px 8px;
+				width: 100%;
+				border: none;
+				box-shadow: none;
+				background: transparent;
+				background-image: none;
+				-webkit-appearance: none;
+
+				font-family: $helvRoman
+				color: #595c63
+				font-size: 14px
+				&:focus
+					outline: none
+.more-filter-2
+	margin-right: -20px
+	margin-left: -20px
+	padding-left: 20px
+	padding-right: 20px
+	background: #F8F8F8
 	// end more-filter-1
 
 
