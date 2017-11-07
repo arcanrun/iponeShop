@@ -28,7 +28,7 @@ $('.owl-carousel').owlCarousel({
 })
 // end owl
 
-// tabs
+// tabs for delivery page
 $(".tabs-content .item-delivery").not(":first").hide();
 $(".tabs-control a").on("click", function(e){
  e.preventDefault();
@@ -37,7 +37,21 @@ $(".tabs-control a").on("click", function(e){
  console.log($(this).index());
  console.log($(this).eq());
 });
-// end tabs
+// end tabs for delivery page
+
+// tabs for card page
+$(".tabs-content .item-card").not(":first").hide();
+$(".tabs-control-card a").on("click", function(e){
+ e.preventDefault();
+ $(".tabs-control-card a").removeClass("active").eq($(this).index()).addClass("active");
+ $(".tabs-content .item-card").hide().eq($(this).index()).fadeIn();
+ console.log($(this).index());
+ console.log($(this).eq());
+});
+// end tabs for card page
+
+
+
 
 // tooltip
 $(document).ready(function(){
