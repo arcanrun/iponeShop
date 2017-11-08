@@ -22,7 +22,7 @@ $(function() {
   })
   // drop-down-main-mnu
   $("#drop-down-main-mnu").mCustomScrollbar({
-    
+    theme:"my-theme"
   });
   // end drop-down-main-mnu
 	// end Yamm mnu
@@ -71,7 +71,16 @@ $(".tabs-control-card a").on("click", function(e){
 });
 // end tabs for card page
 
-
+// tabs for nav
+$(".tabs-content .item-catalog").not(":first").hide();
+$(".tabs-control li").on("click", function(e){
+ e.preventDefault();
+ $(".tabs-control li").removeClass("active").eq($(this).index()).addClass("active");
+ $(".tabs-content .item-catalog").hide().eq($(this).index()).fadeIn();
+ console.log($(this).index());
+ console.log($(this).eq());
+});
+// end tabs for nav
 
 
 // tooltip
