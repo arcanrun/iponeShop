@@ -4,6 +4,22 @@ $(function() {
 	$(document).on('click', '.yamm .dropdown-menu', function(e) {
 		e.stopPropagation()
 	})
+
+  $("#toggle-yamm").on('click', function(e) {
+   
+    console.log("work");
+    e.preventDefault();
+    $(".dropdown-menu").toggle();
+    $(".main-logo").toggleClass("active-logo");
+     if($(".main-logo").hasClass("active-logo"))
+    {
+      $(".main-logo").children("a").children("img").attr("src", "img/logo-white.png");
+    }
+    else
+    {
+      $(".main-logo").children("a").children("img").attr("src", "img/logo.png");
+    }
+  })
 	// end Yamm mnu
 
 
