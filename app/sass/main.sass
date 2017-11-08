@@ -1184,23 +1184,7 @@ footer
 			font-size: 12px
 			font-weight: 400
 			padding-bottom: 0px
-	.memory-blc
-		a
-			margin-bottom: 2px
-			width: 56px
-			display: inline-block
-			opacity: .5
-			color: #595c63
-			font-family: $helvRoman
-			font-size: 14px
-			font-weight: 400
-			border: 2px solid #EEEFF0
-			padding: 5px
-			border-radius: 3px
-			&:hover
-				opacity: 1
-				font-family: $helvMedium
-				border-color: #ACADB1
+	
 	.drop-down-filter
 		padding-bottom: 20px
 		.drop-down-filter-body
@@ -1249,19 +1233,36 @@ footer
 				top: 5px
 				left: 7px
 			select
-				padding: 5px 8px;
-				width: 100%;
-				border: none;
-				box-shadow: none;
-				background: transparent;
-				background-image: none;
-				-webkit-appearance: none;
+				padding: 5px 8px
+				width: 100%
+				border: none
+				box-shadow: none
+				background: transparent
+				background-image: none
+				-webkit-appearance: none
 
 				font-family: $helvRoman
 				color: #595c63
 				font-size: 14px
 				&:focus
 					outline: none
+.memory-blc
+		a
+			margin-bottom: 2px
+			width: 56px
+			display: inline-block
+			opacity: .5
+			color: #595c63
+			font-family: $helvRoman
+			font-size: 14px
+			font-weight: 400
+			border: 2px solid #EEEFF0
+			padding: 5px
+			border-radius: 3px
+			&:hover
+				opacity: 1
+				font-family: $helvMedium
+				border-color: #ACADB1
 .more-filter-2
 	margin-right: -20px
 	margin-left: -20px
@@ -1325,6 +1326,27 @@ footer
 .card-blc
 	background: #fff
 	+clearfix
+	.wrapper-tab
+		background: #FEFEFE
+		
+		.tabs-control-card
+			text-align: left
+			border-bottom: 1px solid #F2F2F3
+			max-width: 311px
+			a
+				padding-top: 34px
+				padding-bottom: 5px
+				margin-right: 50px
+				display: inline-block
+				color: #B7B8BA
+				font-family: $helvMedium
+				font-size: 16px
+				font-weight: 500
+				&:last-child
+					margin-right: 0px
+			.active
+				color: #595c63
+				border-bottom: 1px solid $accent-orange
 	.img-wrapper-card
 		padding-top: 40px
 		text-align: center
@@ -1378,7 +1400,7 @@ footer
 		.input-group
 			width: 90%
 			padding-top: 35px
-			
+
 		input[type=text]
 
 			-webkit-border-radius: 45px
@@ -1410,7 +1432,81 @@ footer
 			position: absolute
 			left: 31%
 			top: 30%
+ul.leaders 
+	margin-top: 20px
+	max-width: 311px
+	padding: 0
+	overflow-x: hidden
+	list-style: none
+	li
+		padding-top: 10px
+ul.leaders li:before 
 
+	float: left
+	width: 0
+	white-space: nowrap
+	content: "..........................................................................................................................................................................................................................."
+ul.leaders span:first-child 
+	font-family: $helvMedium
+	color: #595c63
+	font-weight: bold
+	font-size: 14px
+	padding-right: 0.33em
+	background: white
+ul.leaders span + span 
+	float: right
+	padding-left: 0.33em
+	background: white
+.tabs-content
+	.item-card
+		.color-blc-memory
+			border-bottom: 1px solid #EEEEEF
+			padding-bottom: 20px
+			max-width: 360px
+		.color-blc
+			padding-top: 20px
+			ul
+				font-family: $helvMedium
+				color: #595c63
+				font-weight: bold
+				font-size: 14px
+				text-align: left
+				margin-left: -40px
+				li
+					list-style: none
+					display: inline
+					padding-right: 10px
+					margin-top: 20px
+					a
+						display: inline-block
+						width: 17px
+						height: 17px
+						background: #D9DADC content-box
+						padding: 2px
+						border-radius: 100%
+						border: 1px solid #D9DADC
+						border-spacing: 7px 11px
+						&:hover
+							border: 1px solid #000 
+					#color-card1, #color-card4
+						background: red content-box
+					#color-card2, #color-card5
+						background: #DEDEE0 content-box
+					#color-card3, #color-card6
+						background: #E1A671 content-box
+					.active-color
+						border: 1px solid #000 
+					p
+						display: inline
+						position: relative
+						top: -3px
+		.memory-blc
+			p
+				color: #595c63
+				font-family: $helvMedium
+				font-weight: bold
+				font-size: 14px
+				
 
 // end card page
 // ====================== end serive page ====================
