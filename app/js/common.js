@@ -6,7 +6,7 @@ $(function() {
 	})
 
   $("#toggle-yamm").on('click', function(e) {
-   
+
     console.log("work");
     e.preventDefault();
     $(".dropdown-menu").toggle();
@@ -20,6 +20,11 @@ $(function() {
       $(".main-logo").children("a").children("img").attr("src", "img/logo.png");
     }
   })
+  // drop-down-main-mnu
+  $("#drop-down-main-mnu").mCustomScrollbar({
+    
+  });
+  // end drop-down-main-mnu
 	// end Yamm mnu
 
 
