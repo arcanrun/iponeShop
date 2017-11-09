@@ -39,7 +39,7 @@ $(function() {
     }
     else
     {
-      $(".main-logo").children("a").children("img").attr("src", "img/logo.png");
+      $(".main-logo").children("a").children("img").attr("src", "img/logo-black.png");
         $(".header-main .navbar-default").css
         ({
           "background":"transparent"
