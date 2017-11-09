@@ -7,13 +7,13 @@ $(function() {
 
   $("#toggle-yamm").on('click', function(e) {
 
-    console.log("work");
     e.preventDefault();
     $(".main-logo").toggleClass("active-logo");
   
      $(".dropdown-menu").toggle();
      if($(".main-logo").hasClass("active-logo"))
     {
+      $(this).children().attr("src", "img/Menu-Icon-close.png");
       $(".main-logo").children("a").children("img").attr("src", "img/logo-white.png");
         $(".header-main .navbar-default").css
         ({
@@ -39,6 +39,7 @@ $(function() {
     }
     else
     {
+      $(this).children().attr("src", "img/Menu-Icon.png")
       $(".main-logo").children("a").children("img").attr("src", "img/logo-black.png");
         $(".header-main .navbar-default").css
         ({
@@ -64,6 +65,7 @@ $(function() {
     }
 
   })
+  // Yamm mnu end
   // drop-down-main-mnu
   $("#drop-down-main-mnu").mCustomScrollbar({
     theme:"my-theme"
