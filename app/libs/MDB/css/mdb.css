@@ -5909,9 +5909,9 @@ button:focus {
       font-size: 0.9375rem;
       font-weight: 300;
       padding: 10px;
-      color: #000 !important; }
+     /* color: #000 !important; */}
       .navbar .dropdown-menu a:hover {
-        color: #fff !important; }
+        /*color: #fff !important;*/ }
     @media (max-width: 600px) {
       .navbar .dropdown-menu.dropdown-menu-right {
         right: auto !important; } }
