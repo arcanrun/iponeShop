@@ -9,16 +9,60 @@ $(function() {
 
     console.log("work");
     e.preventDefault();
-    $(".dropdown-menu").toggle();
     $(".main-logo").toggleClass("active-logo");
+  
+     $(".dropdown-menu").toggle();
      if($(".main-logo").hasClass("active-logo"))
     {
       $(".main-logo").children("a").children("img").attr("src", "img/logo-white.png");
+        $(".header-main .navbar-default").css
+        ({
+          "background":"#fff"
+        });
+        $(".header-main .tel-blc a").css
+        ({
+          "color":"#595c63",
+          "border-bottom":"1px dashed #595c63"
+        });
+        $(".header-main .navbar-default .navbar-nav>li>a").css
+        ({
+          "color":"#595c63" 
+        });
+        $(".header-main .navbar-default .navbar-nav>li>a.active").css
+        ({
+          "color":"#595c63"
+        });
+        $(".header-main .navbar-default .navbar-nav>li>a:hover").css
+        ({
+          "color":"#595c63"
+        });
     }
     else
     {
       $(".main-logo").children("a").children("img").attr("src", "img/logo.png");
+        $(".header-main .navbar-default").css
+        ({
+          "background":"transparent"
+        });
+        $(".header-main .tel-blc a").css
+        ({
+          "color":"#fff",
+          "border-bottom":"1px dashed #fff"
+        });
+        $(".header-main .navbar-default .navbar-nav>li>a").css
+        ({
+          "color":"#e9e9ea" 
+        });
+        $(".header-main .navbar-default .navbar-nav>li>a.active").css
+        ({
+          "color":"#fff"
+        });
+        $(".header-main .navbar-default .navbar-nav>li>a:hover").css
+        ({
+          "color":"#fff"
+        });
     }
+
   })
   // drop-down-main-mnu
   $("#drop-down-main-mnu").mCustomScrollbar({
