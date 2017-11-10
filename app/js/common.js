@@ -18,10 +18,10 @@ $(function() {
       $(".main-logo").children("a").children("img[src*=black]").hide();
       $(".main-logo").children("a").children("img[src*=white]").show();
       $(".navbar-default").css("padding-bottom","34px");
-      $(".header-main .navbar-default").css
-      ({
-        "background":"#fff"
-      });
+      // $(".header-main .navbar-default").css
+      // ({
+      //   "background":"#fff"
+      // });
       $(".header-main .tel-blc a").css
       ({
         "color":"#595c63",
@@ -49,10 +49,10 @@ $(function() {
       $(".main-logo").children("a").children("img[src*=black]").show();
       $(".navbar-default").css("padding-bottom","30px");
 
-      $(".header-main .navbar-default").css
-      ({
-        "background":"transparent"
-      });
+      // $(".header-main .navbar-default").css
+      // ({
+      //   "background":"transparent"
+      // });
       $(".header-main .tel-blc a").css
       ({
         "color":"#fff",
