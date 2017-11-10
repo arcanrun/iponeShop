@@ -39,6 +39,27 @@ $(function() {
       ({
         "color":"#595c63"
       });
+      var a = $( window ).width();
+      if(a < 768)
+     {
+      $(".navbar-default").css("padding-bottom","0px");
+      $(".dropdown ").css("background","transparent");
+       if($(".dropdown-menu").css("display") == "block")
+       {
+         $(".dropdown ").css("background","#fff");
+       }
+       else
+       {
+        $(".dropdown ").css("background","transparent");
+       }
+     }
+     else
+      
+    {
+      $(".navbar-default").css("padding-bottom","30px");
+      $(".dropdown ").css("background","transparent");
+      
+    }
     }
     else
     {
@@ -80,15 +101,27 @@ $(function() {
 
 function paddingRegulator()
 {
-  var a = $( window ).width()
-     console.log(a);
+  var a = $( window ).width();
+     
      if(a < 768)
      {
       $(".navbar-default").css("padding-bottom","0px");
+      $(".dropdown ").css("background","transparent");
+       if($(".dropdown-menu").css("display") == "block")
+       {
+         $(".dropdown ").css("background","#fff");
+       }
+       else
+       {
+        $(".dropdown ").css("background","transparent");
+       }
      }
      else
+      
     {
       $(".navbar-default").css("padding-bottom","30px");
+      $(".dropdown ").css("background","transparent");
+      
     }
 }
   $( window ).resize(function(){
