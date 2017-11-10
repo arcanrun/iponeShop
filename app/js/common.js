@@ -9,62 +9,94 @@ $(function() {
 
     e.preventDefault();
     $(".main-logo").toggleClass("active-logo");
-  
-     $(".dropdown-menu").toggle();
-     if($(".main-logo").hasClass("active-logo"))
+
+    $(".dropdown-menu").toggle();
+    if($(".main-logo").hasClass("active-logo"))
     {
-      $(this).children().attr("src", "img/Menu-Icon-close.png");
-      $(".main-logo").children("a").children("img").attr("src", "img/logo-white.png");
-        $(".header-main .navbar-default").css
-        ({
-          "background":"#fff"
-        });
-        $(".header-main .tel-blc a").css
-        ({
-          "color":"#595c63",
-          "border-bottom":"1px dashed #595c63"
-        });
-        $(".header-main .navbar-default .navbar-nav>li>a").css
-        ({
-          "color":"#595c63" 
-        });
-        $(".header-main .navbar-default .navbar-nav>li>a.active").css
-        ({
-          "color":"#595c63"
-        });
-        $(".header-main .navbar-default .navbar-nav>li>a:hover").css
-        ({
-          "color":"#595c63"
-        });
+      $("#btn-drop-down").hide();
+      $("#close-btn-drop-down").show();
+      $(".main-logo").children("a").children("img[src*=black]").hide();
+      $(".main-logo").children("a").children("img[src*=white]").show();
+      $(".navbar-default").css("padding-bottom","34px");
+      $(".header-main .navbar-default").css
+      ({
+        "background":"#fff"
+      });
+      $(".header-main .tel-blc a").css
+      ({
+        "color":"#595c63",
+        "border-bottom":"1px dashed #595c63"
+      });
+      $(".header-main .navbar-default .navbar-nav>li>a").css
+      ({
+        "color":"#595c63" 
+      });
+      $(".header-main .navbar-default .navbar-nav>li>a.active").css
+      ({
+        "color":"#595c63"
+      });
+      $(".header-main .navbar-default .navbar-nav>li>a:hover").css
+      ({
+        "color":"#595c63"
+      });
     }
     else
     {
-      $(this).children().attr("src", "img/Menu-Icon.png")
-      $(".main-logo").children("a").children("img").attr("src", "img/logo-black.png");
-        $(".header-main .navbar-default").css
-        ({
-          "background":"transparent"
-        });
-        $(".header-main .tel-blc a").css
-        ({
-          "color":"#fff",
-          "border-bottom":"1px dashed #fff"
-        });
-        $(".header-main .navbar-default .navbar-nav>li>a").css
-        ({
-          "color":"#e9e9ea" 
-        });
-        $(".header-main .navbar-default .navbar-nav>li>a.active").css
-        ({
-          "color":"#fff"
-        });
-        $(".header-main .navbar-default .navbar-nav>li>a:hover").css
-        ({
-          "color":"#fff"
-        });
+
+      $("#close-btn-drop-down").hide();
+      $("#btn-drop-down").show();
+      $(".main-logo").children("a").children("img[src*=white]").hide();
+      $(".main-logo").children("a").children("img[src*=black]").show();
+      $(".navbar-default").css("padding-bottom","30px");
+
+      $(".header-main .navbar-default").css
+      ({
+        "background":"transparent"
+      });
+      $(".header-main .tel-blc a").css
+      ({
+        "color":"#fff",
+        "border-bottom":"1px dashed #fff"
+      });
+      $(".header-main .navbar-default .navbar-nav>li>a").css
+      ({
+        "color":"#e9e9ea" 
+      });
+      $(".header-main .navbar-default .navbar-nav>li>a.active").css
+      ({
+        "color":"#fff"
+      });
+      $(".header-main .navbar-default .navbar-nav>li>a:hover").css
+      ({
+        "color":"#fff"
+      });
+      if($(window).width() < 768)
+      {
+        paddingRegulator();
+      }
     }
 
   })
+
+function paddingRegulator()
+{
+  var a = $( window ).width()
+     console.log(a);
+     if(a < 768)
+     {
+      $(".navbar-default").css("padding-bottom","0px");
+     }
+     else
+    {
+      $(".navbar-default").css("padding-bottom","30px");
+    }
+}
+  $( window ).resize(function(){
+    paddingRegulator();
+  });
+ 
+   
+
   // Yamm mnu end
   // drop-down-main-mnu
   $("#drop-down-main-mnu").mCustomScrollbar({
@@ -99,10 +131,10 @@ $('.owl-carousel').owlCarousel({
 $(".tabs-content .item-delivery").not(":first").hide();
 $(".tabs-control a").on("click", function(e){
  e.preventDefault();
- $(".tabs-control a").removeClass("active").eq($(this).index()).addClass("active");
+ $(".tabs-control > a").removeClass("active").eq($(this).index()).addClass("active");
  $(".tabs-content .item-delivery").hide().eq($(this).index()).fadeIn();
  console.log($(this).index());
- console.log($(this).eq());
+ 
 });
 // end tabs for delivery page
 
